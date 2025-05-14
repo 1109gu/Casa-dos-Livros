@@ -4,95 +4,72 @@
   box-sizing: border-box;
 }
 
-body * {
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-
 body {
-  /*
-  background-image: url(./assets/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  */
-  background: url(./assets/fundo\ book.jpg) no-repeat top center/cover;
+  font-family: "Roboto", sans-serif;
+  background: url("./assets/fundo book.jpg") no-repeat center center/cover;
+  color: #ffffff;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-h1 {
-  color: rgb(17, 12, 2);
-  display: flex;
-  justify-content: left;
-  font-size: 75px;
+.header {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #221f1f;
   font-style: italic;
 }
-#fundo {
-  border: 6px;
-  padding: 16px 24px;
-  background: rgba(201, 204, 204, 0.4);
-}
 
-#container {
-  width: 400px;
-
-  margin: 0 auto 400px auto;
-  padding: 0x;
-}
-p {
-  color: black;
-  display: flex;
-  justify-content: end;
-  font-size: 28px;
-  font-style: italic;
-  gap: 20px;
+.main-content {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
 }
 
 #profile img {
-  width: 300px;
+  width: 200px;
+  margin-bottom: 20px;
 }
 
-a {
-  display: center;
-}
-
-#profile {
-  text-align: center;
-  padding: 24px;
-  margin-top: 8px;
-}
-
-#profile p {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-/* links */
-ul {
+.social-links {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-bottom: 32px;
+  padding: 0;
 }
-ul li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  padding: 16px 24px;
-  background: rgba(106, 163, 236, 0.527);
-
-  border: 1px solid rgba(69, 67, 224, 0.2);
-  border-radius: 8px;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+.social-links li a {
+  display: block;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  color: #ffffff;
   text-decoration: none;
-  font-weight: 500;
-  transition: background 0.2s;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
 }
 
-/* pseudo-selector */
-ul li a:hover {
+.social-links li a:hover {
   background: rgba(255, 255, 255, 0.5);
-  border: 1.5px solid white;
+  color: #000;
+}
+
+.description {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  color: #000;
+  font-size: 1.1rem;
+}
+
+.description p {
+  margin-bottom: 16px;
 }
